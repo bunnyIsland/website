@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bunny Island</title>
+    <style>
+    
+    HTML, BODY {
+	  height: 100%;
+	}
+
+	BODY {
+	  background: url('https://storage.cloud.google.com/bunny-island/candyland_light.png') no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  font: 16em/1 Arial;
+
+	}
+
+	.text--line {
+	  font-size: 0.5em;
+	}
+
+	svg {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.text-copy {
+	  fill: none;
+	  stroke: white;
+	  stroke-dasharray: 7% 28%;
+	  stroke-width: 3px;
+	  -webkit-animation: stroke-offset 10s infinite ease-in;
+		  animation: stroke-offset 10s infinite ease-in;
+	}
+	.text-copy:nth-child(1) {
+	  stroke: #ff79e9;
+	  stroke-dashoffset: 7%;
+	}
+	.text-copy:nth-child(2) {
+	  stroke: #fab276;
+	  stroke-dashoffset: 14%;
+	}
+	.text-copy:nth-child(3) {
+	  stroke: #b2aafa;
+	  stroke-dashoffset: 21%;
+	}
+	.text-copy:nth-child(4) {
+	  stroke: #ff5a5a;
+	  stroke-dashoffset: 28%;
+	}
+	.text-copy:nth-child(5) {
+	  stroke: #86d3df;
+	  stroke-dashoffset: 35%;
+	}
+
+	@-webkit-keyframes stroke-offset {
+	  50% {
+	    stroke-dashoffset: 35%;
+	    stroke-dasharray: 0 87.5%;
+	  }
+	}
+
+	@keyframes stroke-offset {
+	  50% {
+	    stroke-dashoffset: 35%;
+	    stroke-dasharray: 0 87.5%;
+	  }
+	}
+
+	@-webkit-keyframes delay-animation  {
+		0% {
+		  opacity: 1;
+		}
+		
+		50% {
+		  opacity: 1;
+		}
+		50.01% {
+		  opacity: 1;
+		}
+		100% {
+		  opacity: 1;
+		}
+	
+	}
+	
+	@keyframes delay-animation {
+		0% {
+		  opacity: 1;
+		}
+		
+		50% {
+		  opacity: 1;
+		}
+		50.01% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 0;
+		}
+	
+	}
+	
+	.centered {
+	  position: fixed;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+    </style>
+  </head>
+  <body>
+  <svg viewBox="0 0 800 600">
+  <symbol id="s-text">
+    <text text-anchor="middle"
+          x="50%"
+          y="35%"
+          class="text--line"
+          >
+      Come Back
+    </text>
+    <text text-anchor="middle"
+          x="50%"
+          y="68%"
+          class="text--line2"
+          >
+      Later :)
+    </text>
+    
+  </symbol>
+  
+  <g class="g-ants">
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+    <use xlink:href="#s-text"
+      class="text-copy"></use>     
+  </g>
+  
+  
+</svg>
+  </body>
+</html>
