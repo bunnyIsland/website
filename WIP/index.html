@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bunny Island</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="location.href='#'">
+    <section id="t">
+        <div class="header-ancestor">
+            <header id="header" class="box-shadow">
+                <nav class="nav">
+                    <a href="/" class="logo" style="margin:0;">Bunny Island</a>
+                    <div style="text-align:right" class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div style="width:100%; background:transparent; display:inline-block!important; text-align:center">
+                        <div style="justify-content: space-around; margin-top: 10px" class="nav__link hide">
+                            <a href="#">HOME</a>
+                            <a href="#learnMore">LEARN MORE</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">ROADMAP</a>
+                            <a href="#">TEAM</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </section>
+
+    <div class="scrollDist"></div>
+    <div class="main">
+        <svg height="100%" width="1920">
+        <mask id="m">
+          <g class="cloud1">
+            <rect fill="#fff" width="1920" height="1080" y="850"></rect>
+          </g>
+        </mask>
+        <image class="mountBg" href="./images/l2.png" width="1920" height="1080"></image>
+        <image class="mountBg" href="./images/l3.png" width="1920" height="1080"></image>
+        <image class="mountMg" href="./images/l4.png" width="1920" height="1080"></image>
+        <image class="mountFg" href="./images/l5.png" width="1920" height="1080"></image>
+        <image class="mountFg2" href="./images/l6.png" width="1920" height="1080"></image>
+        <g mask="url(#m)">
+          <rect fill="#fff" width="100%" height="100%"></rect>
+        </g>
+      </svg>
+    </div>
+    <div class="tc" style="display: flex;align-items: center; justify-content: center;  margin-top: 1000px;width: 100%; height: 100%; margin-left: auto!important; margin-right: auto!important;">
+        <div class="content" style="display:block;width: 70%; height: 100%; margin-left: auto!important; margin-right: auto!important;justify-content: center;align-items: center; ">
+            <div id="learnMore" class="row content" style="opacity: 0;width: 100%;display: flex;position: static!important;margin-right:auto!important;margin-left: auto!important">
+                <div class="col col-12 col-sm-12 col-md-6">
+                    <div class="fadein" style="position:relative!important;">
+                        <img class="slides slides-hidden" src="./images/1.png">
+                        <img class="slides slides-hidden" src="./images/2.png">
+                        <img class="slides slides-hidden" src="./images/3.png">
+                        <img class="slides slides-hidden" src="./images/4.png">
+                        <img class="slides slides-hidden" src="./images/5.png">
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6">
+                    <span>
+              <br>
+              <h1 class="primary-color">What is Bunny Island?</h1>
+              <br>
+              <p class="text-description">Bunny Island is an on-chain game that allows users to breed, modify, and trade virtual Bunnies.</p>
+              <p class="text-description">Every aspect of the game is supervised by a Plutus smart-contract, from breeding subsequent generations to modifying the Bunnies genome through special items and even shopping at a in-game store.</p>
+              <p class="text-description">Essentially this will be a machine that is always fair; can't be corrupted, can not rug, doesn't get tired, and makes no compromises, the ultimate ruler over Bunny Island.</p>
+            </span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div id="learnMore3" class="row content" style="opacity: 0; width: 100%;display: flex;position: static!important;margin-right:auto!important;margin-left: auto!important">
+                <div class="col col-12 col-sm-12 col-md-12">
+                    <center>
+                        <h1 class="primary-color">Watch our first Dev Log</h1>
+                        <br>
+                        <p class="text-description">In our first Dev Log, Our the dev, Angel Castillo explains the game's core concept, design, and game mechanics.</p>
+                        <br>
+                        <iframe width="80%" height="550" src="https://www.youtube.com/embed/uiyqc5H3WQ8"> 
+              </iframe>
+                    </center>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div id="learnMore2" class="row content" style="opacity: 0; width: 100%;display: flex;position: static!important;margin-right:auto!important;margin-left: auto!important">
+                <div class="col col-12 col-sm-12 col-md-6">
+                    <span>
+              <br>
+              <h1 class="primary-color">A New Kind of NFT</h1>
+              <br>
+              <p class="text-description">The current trend in Cardano is the CIP-0025 NFT Metadata standard.
+              </p>
+              <p class="text-description">This kind of tokens store the NFT data on the metadata of the transaction that minted the token. As such, it relies on the fact that the minting operation is executed by a central authority that will verify that the metadata is correct; however, in a completely decentralized system, this is undesirable. We want decentralization, after all.</p>
+              <p class="text-description">Bunny Island NFTs solve the centralization issues with CIP-0025, we will share more datails soon. Stay tuned.</p>
+            </span>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6">
+                    <center>
+                        <img src="./images/desserts.png" style="width: 80%">
+                    </center>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="row content" style="width: 100%;display: flex;position: static!important;margin-right:auto!important;margin-left: auto!important">
+                <div class="col col-12 col-sm-12 col-md-12">
+                    <span>
+              <br>
+              <center>
+                <h1 class="primary-color">Frequently Ask Question</h1>
+              </center>
+              <br>
+              <section class="faq-container">
+                <div class="faq-one" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">What is an NFT?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">A non-fungible token (NFT) is a unit of data stored on the blockchain that certifies digital assets to be unique. These assets can then be tracked to provide proof of ownership.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">What blockchain is it on?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">Bunny Island tokens will be a new kind of NFTs droping on Cardano.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">How is Bunny Island different from other NFT projects?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">
+                      Bunny Island aims to be the first 100% decentralized NFT project on the Cardano blockchain, governed by a smart contract. Every aspect of the game will be run by Plutus code, from breeding subsequent generations to modifying the Bunnies gnome through special items and even the in-game store. Essentially this will be a machine that is always fair; can't be corrupted, can not rug, doesn't get tired, and makes no compromises, the ultimate ruler over Bunny Island.</p>
+                    <p class="text-description">After deploying it, the game will exist as long as the Cardano blockchain exists (essentially forever).</p>
+                    <p class="text-description">We are taking several measures to ensure the game stays relevant for many decades and hopefully outlives us all. Stay tuned for more details.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">How can I get a Bunny?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">You will be able to mint one directly from out smart-contract (Yes, thats right, smart-contract minting on Cardano!) during the gen-0 mint event, And If you already own some bunnies you will be able to mint your own!.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">How much will minting Bunnies cost?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">The mint cost of gen-0 bunnies is still TBD. The breeding fee for creating new bunnies from your own will be 4 ADA.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">Are Bunny Island NFTs native tokens?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">Yes, we believe that having NFTs as native tokens is one of the strengths of Cardano. We are just changing the place where the metadata is stored to allow this data to be read by smart-contracts and, more importantly, to allow smart-contracts to validate pre and post conditions on all new NFTs minted through the breeding mechanism of the game.</p>
+                    <p class="text-description">We will share more details soon.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">How many traits will the Bunnies have?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">Each Bunnies genome consist of 10 gens, each gene can take 50 different values. (this adds up to 97 quadrillions)</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">When is the drop?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">We are aiming for Q4 2022. However, this can move closer or farther to today; this will depend on how fast we can advance on the development.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">How many Gen-0 Bunnies will be minted?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">We are still discussing how many, but we will share the number as soon as we reach a desition.</p>
+                  </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three" style="position: relative;">
+                  
+                  <!-- faq question -->
+                  <h1 class="faq-page">What wallets can I use to mint and play the game?</h1>
+                  
+                  <!-- faq answer -->
+                  <div class="faq-body">
+                    <p class="text-description">You will need to use a dApp enabled wallet. Right now we are planing to support Nami, Eternl and Flint, but we may add more in the near future.</p>
+                  </div>
+                </div>
+              </section>
+            </span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <div class="row content" style="width: 100%;display: flex;position: static!important;margin-right:auto!important;margin-left: auto!important">
+                <div class="col col-12 col-sm-12 col-md-12">
+                    <span>
+              <br>
+              <h1 class="primary-color">Roadmap</h1>
+              <br>
+              <section class="timeline">
+                <ul>
+                  <li>
+                    <div class="content">
+                      <h2>
+                        <time>2022 Q2</time>
+                      </h2>
+                      <p class="text-description">Pre-mint launch, Twitter and Discord created, community building, art concept and the first prototype of our smart-contract are created.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content">
+                      <h2>
+                        <time>2022 Q3</time>
+                      </h2>
+                      <p class="text-description">Bunnie Island becomes part of the Disco Solaris universe!.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content">
+                      <h2>
+                        <time>2022 Q4</time>
+                      </h2>
+                      <p class="text-description">The genesis mint event happen, the first ever gen-0 bunnies are created. dApp with breeding, shop and mutation stations is made available.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content">
+                      <h2>
+                        <time>2023 Q1</time>
+                      </h2>
+                      <p class="text-description">Add our own Marketplace, coop-breeding, genialogical tree and more!</p>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <h1 class="primary-color">Team</h1>
+            <br>
+            <br>
+            <br>
+            <div class="row content" style="width: 100%;display: flex;position: static!important;margin-right:auto!important;margin-left: auto!important">
+                <div class="col col-12 col-sm-12 col-md-4">
+                    <img src="./images/4.png" style="width: 100%">
+                    <div>
+                        <span>
+                <br>
+                <h1 class="primary-color">Chaos Creator</h1>
+                <br>
+                <p class="text-description">Digital artist and storyteller.</p>
+              </span>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="col col-12 col-sm-12 col-md-4">
+                    <img src="./images/2.png" style="width: 100%">
+                    <div>
+                        <span>
+                <br>
+                <h1 class="primary-color">Oku</h1>
+                <br>
+                <p class="text-description">Digital artist and Discord admin.</p>
+              </span>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="col col-12 col-sm-12 col-md-4">
+                    <img src="./images/3.png" style="width: 100%">
+                    <div>
+                        <span>
+                <br>
+                <h1 class="primary-color">Archangel</h1>
+                <p class="text-description">Software Engineer and Plutus Pioneer (Second Cohort).</p>
+              </span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <div class="row content" style="width: 100%;display: flex;position: static!important;margin-right:0;margin-left: 0">
+                <div class="col-sm-4">
+                    <h5 class="primary-color">Social Network</h5>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="primary-color">Privacy</h5>
+                    <p class="text-description">Terms of Services</p>
+                    <p class="text-description">Privacy Policy</p>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="primary-color">Contact</h5>
+                    <p class="text-description">Get in touch if you have any questions.</p>
+                    <p class="text-description">team@horrocubes.io</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="loader-wrapper">
+        <span class="loader">
+        <span class="loader-inner"></span>
+        </span>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
